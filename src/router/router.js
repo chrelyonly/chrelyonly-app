@@ -6,7 +6,29 @@ const routes = [
         path: "/",
         component: () => import("@/views/home.vue"),
         meta: { requiresAuth: true },
+        // children:[
+            // {
+            //     path: "/data/dashboard",
+            //     component: () => import("@/views/data/dashboard.vue"),
+            //     meta: { requiresAuth: true }
+            // },
+            // {
+            //     path: "/device",
+            //     component: () => import("@/views/device/device.vue"),
+            //     meta: { requiresAuth: true }
+            // },
+            // {
+            //     path: "/forwardView",
+            //     component: () => import("@/views/forwardView/forwardView.vue"),
+            //     meta: { requiresAuth: true }
+            // },
+        // ]
     },
+    // {
+    //     path: "/login",
+    //     component: () => import("@/views/login/login.vue")
+    // },
+
 ]
 
 const router = createRouter({
