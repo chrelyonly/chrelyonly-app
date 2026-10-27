@@ -5,7 +5,6 @@ const routes = [
     {
         path: "/",
         component: () => import("@/views/home.vue"),
-        meta: { requiresAuth: true },
         // children:[
             // {
             //     path: "/data/dashboard",
